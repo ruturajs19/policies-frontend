@@ -1,0 +1,13 @@
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 70px;
+  background-color: rgb(75, 117, 245);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  font-weight: bold;
+}

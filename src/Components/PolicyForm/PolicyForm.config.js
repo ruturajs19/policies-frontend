@@ -1,0 +1,106 @@
+export const fieldType = {
+  readOnly: "readOnly",
+  numberInput: "numberInput",
+  dropdown: "dropdown",
+};
+
+export const policyFormFields = [
+  {
+    id: "policyId",
+    label: "Policy Id",
+    type: fieldType.readOnly,
+  },
+  {
+    id: "dateOfPurchase",
+    label: "Date Of Purchase",
+    type: fieldType.readOnly,
+  },
+  {
+    id: "customerId",
+    label: "Customer Id",
+    type: fieldType.readOnly,
+  },
+  {
+    id: "fuel",
+    label: "Fuel",
+    type: fieldType.dropdown,
+    options: ["CNG", "PETROL", "DIESEL"],
+    toBeMapped: false,
+  },
+  {
+    id: "vehicleSegment",
+    label: "Vehicle Segment",
+    type: fieldType.dropdown,
+    options: ["A", "B", "C"],
+    toBeMapped: false,
+  },
+  {
+    id: "premium",
+    label: "Premium",
+    type: fieldType.numberInput,
+    max: 1000000,
+  },
+  {
+    id: "bodilyInjuryLiability",
+    label: "Bodily Injury Liability",
+    type: fieldType.dropdown,
+    options: ["No", "Yes"],
+    toBeMapped: true,
+  },
+  {
+    id: "personalInjuryProtection",
+    label: "Personal Injury Protection",
+    type: fieldType.dropdown,
+    options: ["No", "Yes"],
+    toBeMapped: true,
+  },
+  {
+    id: "propertyDamageLiability",
+    label: "Property Damage Liability",
+    type: fieldType.dropdown,
+    options: ["No", "Yes"],
+    toBeMapped: true,
+  },
+  {
+    id: "collision",
+    label: "Collision",
+    type: fieldType.dropdown,
+    options: ["No", "Yes"],
+    toBeMapped: true,
+  },
+  {
+    id: "comprehensive",
+    label: "Comprehensive",
+    type: fieldType.dropdown,
+    options: ["No", "Yes"],
+    toBeMapped: true,
+  },
+  {
+    id: "customerGender",
+    label: "Customer Gender",
+    type: fieldType.dropdown,
+    options: ["Male", "Female"],
+    toBeMapped: false,
+  },
+  {
+    id: "customerIncomeGroup",
+    label: "Customer Income Group",
+    type: fieldType.dropdown,
+    options: ["0- $25K", "$25-$70K", ">$70K"],
+    toBeMapped: false,
+  },
+  {
+    id: "customerRegion",
+    label: "Customer Region",
+    type: fieldType.dropdown,
+    options: ["East", "North", "South", "West"],
+    toBeMapped: false,
+  },
+  {
+    id: "customerMaritalStatus",
+    label: "Customer Marital Status",
+    type: fieldType.dropdown,
+    options: ["Unmarried", "Married"],
+    toBeMapped: true,
+  },
+];

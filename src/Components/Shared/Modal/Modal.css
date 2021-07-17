@@ -1,0 +1,36 @@
+.backdrop-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 20rem;
+    height: 150px;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 5px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  
+  .modal-body {
+      display: flex;
+      justify-content: space-around;
+      align-content: center;
+      font-weight: bold;
+      padding: 10px;
+  }
+  .modal-footer {
+      display: flex;
+      justify-content: space-around;
+  }
